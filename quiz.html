@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    width: 85% !important;
+  }
+  body{
+    background-image: url("http://ios-parallax-wallpapers.nobon.me/wp-content/uploads/2013/12/freeios7.com_apple_wallpaper_blurred_purple_ipad_retina_parallax.jpg");
+  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+  }
+  .card-title {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .text-box {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    padding: 10%;
+    text-align: left;
+  }
+  img {
+    width: 100%;
+  }
+  .adv {
+    color: #27ae60 !important;
+  }
+  .dis {
+    color: #e74c3c !important;
+  }
+  .tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: #6356a6 !important;
+  }
+  .tabs .tab a {
+    color: rgb(169, 162, 212) !important;
+  }
+  .tabs .indicator {
+    background-color: rgb(169, 162, 212) !important;
+  }
+  label {
+    color: black !important;
+  }
+</style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper purple darken-4">
+      <a href="#" class="brand-logo" style="padding-left: 3%;">Development cycle</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container center">
+    <div class="row">
+      <div class="col s4">
+        <div class="card">
+          <div class="card-title">
+            Which is part of the waterfall cycle?
+          </div>
+          <div class="card-content">
+            <form action="#">
+              <p>
+                <input name="group1" type="radio" id="test1" />
+                <label for="test1">Documentation</label>
+              </p>
+              <p>
+                <input name="group1" type="radio" id="test2" />
+                <label for="test2">Prototyping</label>
+              </p>
+              <p>
+                <input name="group1" type="radio" id="test3"  />
+                <label for="test3">Design</label>
+              </p>
+              <p>
+                <input name="group1" type="radio" id="test4" />
+                <label for="test4">Stand up meetings</label>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-title">
+            Which is bad about the waterfall cycle?
+          </div>
+          <div class="card-content">
+            <form action="#">
+              <p>
+                <input name="group2" type="radio" id="test5" />
+                <label for="test5">Cost</label>
+              </p>
+              <p>
+                <input name="group2" type="radio" id="test6" />
+                <label for="test6">Quality</label>
+              </p>
+              <p>
+                <input name="group2" type="radio" id="test7"  />
+                <label for="test7">Software reliability/Testing</label>
+              </p>
+              <p>
+                <input name="group2" type="radio" id="test8" />
+                <label for="test8">Documentation</label>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-title">
+            What does DAD Stand for?
+          </div>
+          <div class="card-content">
+            <form action="#">
+              <p>
+                <input name="group3" type="radio" id="test9" />
+                <label for="test9">Direct agile directory</label>
+              </p>
+              <p>
+                <input name="group3" type="radio" id="test10" />
+                <label for="test10">Digital and diciplined</label>
+              </p>
+              <p>
+                <input name="group3" type="radio" id="test11"  />
+                <label for="test11">Diciplined agile delivery</label>
+              </p>
+              <p>
+                <input name="group3" type="radio" id="test12" />
+                <label for="test12">Digitally agile delivery</label>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <a class="waves-effect waves-light btn purple darken-4" onClick="results()" >Submit</a>
+    </div>
+  </div>
+  <script language="Javascript">
+  var group;
+  var answers = [3, 5, 11];
+  var score = 0; console.log(score);
+  function results() {
+    for(i = 1; i < 4; i++) {
+      group = document.querySelector('input[name = "group'+ i + '"]:checked');
+      if(!(group == null)) if(parseInt(group.id.substring(4)) == answers[i - 1]) score++;
+    }
+     Materialize.toast(('You scored ' +  score + '/3'), 4000)
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    width: 85%  !important;
+  }
+  body{
+    background-image: url("http://ios-parallax-wallpapers.nobon.me/wp-content/uploads/2013/12/freeios7.com_apple_wallpaper_blurred_purple_ipad_retina_parallax.jpg");
+  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+  }
+  .card-title {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .text-box {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    padding: 10%;
+    text-align: left;
+  }
+  img {
+    width: 100%;
+  }
+  .adv {
+    color: #27ae60 !important;
+  }
+  .dis {
+    color: #e74c3c !important;
+  }
+  .tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: #6356a6 !important;
+  }
+  .tabs .tab a {
+    color: rgb(169, 162, 212) !important;
+  }
+  .tabs .indicator {
+    background-color: rgb(169, 162, 212) !important;
+  }
+</style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper purple darken-4">
+      <a href="#" class="brand-logo" style="padding-left: 3%;">Development cycle</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container center">
+    <div class="row">
+      <div class="col s4">
+        <div class="card">
+          <div class="card-title">
+            Waterfall
+          </div>
+          <div class="card-content" style="min-height: 500px;">
+            Click any of the following to find out more about each stage:
+            <ul class="collapsible" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header">1. Requirements</div>
+                <div class="collapsible-body">
+                  <img src="http://combiboilersleeds.com/images/requirements/requirements-6.jpg">
+                  <div class="text-box">
+                    The requirements are looked over. The client will explain excatly what they want, and the development team will take notes in preperation for analysis.
+                    If this stage is not done well, the whole project can be a waste of time because there isn't ever much communication with the client
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">2. Analysis</div>
+                <div class="collapsible-body">
+                  <img src="http://huntingtonoutdoor.com/wp-content/uploads/2016/09/Design-Matters1.jpg">
+                  <div class="text-box">
+                    During analysis, the project's feesability is questioned. More specifically, the legal, finantial and timeframes are looked
+                    over, and the price is set. Beyond this point, the project is likely to cost much more, and so it must be done to the fullest extent.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">3. Design</div>
+                <div class="collapsible-body">
+                  <img src="http://werehumans.com/wp-content/uploads/2016/04/CodingSnippet.jpg">
+                  <div class="text-box">
+                    Design consists of putting the project together in the form of tree diagrams flow charts etc. The logic behind each planned
+                    function is decided, and safety aspects of software are gone over to ensure the final product will be higher quality.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">4. Coding</div>
+                <div class="collapsible-body">
+                  <img src="http://mobileapps.its.umich.edu/sites/all/themes/umzentwo/images/testing-icon.png">
+                  <div class="text-box">
+                    The coding process is simply creating the application. Code by each developer is submitted and pushed to a centeral hub, where testing may occur however
+                    it is usually saved for the testing process.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">5. Testing</div>
+                <div class="collapsible-body">
+                  <img src="http://combiboilersleeds.com/images/requirements/requirements-6.jpg">
+                  <div class="text-box">
+                    During the testing phase, white (line by line) box or black (console/function based only) testing. This is usually a very extensive phase of the waterfall process along with documentation,
+                    and is considered to give code produced by this development method it high quality.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">6. maintenance</div>
+                <div class="collapsible-body">
+                  <img src="https://img.clipartfest.com/0e6fc80f1b56e4f7d45d70f81cf966b3_http-www-dreamstime-com-maintenance-work-clipart_2357-2121.jpeg">
+                  <div class="text-box">
+                    Maintaining the code simply means updating it to fix errors or create slight adaptions. The maintenance phase can often encompass other parts of the cycle within it.
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <table class="bordered highlight">
+              <thead>
+                <tr>
+                    <th data-field="name" class="adv">Advantages</th>
+                    <th data-field="price" class="dis">Disadvantages</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="adv">High quality code</td>
+                  <td class="dis">Time consuming</td>
+                </tr>
+                <tr>
+                  <td class="adv">Well documented</td>
+                  <td class="dis">Very expensive</td>
+                </tr>
+                <tr>
+                  <td class="adv">Great for liner projects which keep the same requirements, eg Production line</td>
+                  <td class="dis">If the project requirements change, you have to go back up the cycle which is time / money consuming</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="row">
+          <div class="col s6">
+            <div class="card">
+              <div class="card-title">
+                Agile Methods
+              </div>
+              <div class="card-content">
+                Agile software development describes a set of principles for software development under which requirements and solutions evolve through the collaborative effort of self-organizing cross-functional teams.
+                It advocates adaptive planning, evolutionary development, early delivery, and continuous improvement, and it encourages rapid and flexible response to change.
+                <div class="horizontal-line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="card">
+              <div class="card-title">
+                Rapid Application Development
+              </div>
+              <div class="card-content">
+                 RAD approaches to software development put less emphasis on planning and more on process. In contrast to the waterfall model, RAD approaches emphasize adaptability and the necessity of adjusting requirements in response to knowledge gained as the project progresses. Prototypes are often used in addition to or sometimes even in place of design specifications.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width" style="overflow: hidden;">
+                  <li class="tab"><a class="active" href="#agi1">XP</a></li>
+                  <li class="tab"><a href="#agi2">Scrum</a></li>
+                  <li class="tab"><a href="#agi3">DAD</a></li>
+                </ul>
+              </div>
+              <div class="card-content">
+                <div id="agi1"><div class="text-box">Extreme programming (XP) is a software development methodology which is intended to improve software quality and responsiveness to changing customer requirements. As a type of agile software development, it advocates frequent "releases" in short development cycles, which is intended to improve productivity and introduce checkpoints at which new customer requirements can be adopted. Other elements of extreme programming include: programming in pairs or doing extensive code review, unit testing of all code, avoiding programming of features until they are actually needed, a flat management structure, code simplicity and clarity, expecting changes in the customer's requirements as time passes and the problem is better understood, and frequent communication with the customer and among programmers. The methodology takes its name from the idea that the beneficial elements of traditional software engineering practices are taken to "extreme" levels. As an example, code reviews are considered a beneficial practice; taken to the extreme, code can be reviewed continuously, i.e. the practice of pair programming.</div></div>
+                <div id="agi2"><div class="text-box">Scrum is an iterative and incremental agile software development framework for managing product development. It defines "a flexible, holistic product development strategy where a development team works as a unit to reach a common goal", challenges assumptions of the "traditional, sequential approach" to product development, and enables teams to self-organize by encouraging physical co-location or close online collaboration of all team members, as well as daily face-to-face communication among all team members and disciplines involved. A key principle of Scrum is its recognition that during product development, the customers can change their minds about what they want and need (often called requirements volatility), and that unpredicted challenges cannot be easily addressed in a traditional predictive or planned manner. As such, Scrum adopts an evidence-based empirical approach—accepting that the problem cannot be fully understood or defined, focusing instead on maximizing the team's ability to deliver quickly, to respond to emerging requirements and to adapt to evolving technologies and changes in market conditions.</div></div>
+                <div id="agi3"><div class="text-box">Disciplined agile delivery (DAD) is a process decision framework that enables simplified process decisions around incremental and iterative solution delivery. DAD builds on the many practices espoused by advocates of agile software development, including Scrum, agile modeling, lean software development, and others. DAD Follows a iterative model, however it is prepended with Inception, Construction and Transition. Each of these phases are iterative within themselves. Following that there is an OnGoing phase in which the product is adaptively developed and maintained. </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
