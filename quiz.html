@@ -153,7 +153,7 @@
       group = document.querySelector('input[name = "group'+ i + '"]:checked');
       if(!(group == null)) if(parseInt(group.id.substring(4)) == answers[i - 1]) score++;
     }
-     Materialize.toast(('You scored ' +  score + '/3'), 4000)
+     Materialize.toast(('You scored ' +  score + '/3'), 4000); score = 0
   }
   </script>
 </body>
